@@ -11,7 +11,7 @@
   <div class="container">
     <h1>Modrinth Project Tracker</h1>
     <div class="input-group">
-      <input type="text" id="projectID" placeholder="Enter Modrinth Project ID">
+      <input type="text" id="projectID" placeholder="Enter Modrinth Project ID" value="P7dR8mSH">
       <button onclick="pasteProjectID()">Paste</button>
     </div>
     <button onclick="fetchProjectStats()">Track Project</button>
@@ -22,8 +22,6 @@
   <button onclick="previousPage()" id="prevBtn" disabled>Previous</button>
   <button onclick="nextPage()" id="nextBtn" disabled>Next</button>
 </div>
-
-<!-- Add a chart container for downloads (if not already in HTML) -->
 <canvas id="downloadChart" width="400" height="200"></canvas>
   <script src="script.js"></script>
 </body>
