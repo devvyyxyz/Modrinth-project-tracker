@@ -1,0 +1,94 @@
+/* General Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #E0E0E0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background-color: #1F1F1F;
+  padding: 2em;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Heading */
+h1 {
+  color: #1DB954;
+}
+
+/* Input Group Styling */
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+input, button {
+  padding: 0.5em;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+input {
+  flex: 1;
+  color: #E0E0E0;
+  background-color: #333;
+  margin-right: 0.3em;
+}
+
+button {
+  background-color: #1DB954;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #1ed760;
+}
+
+/* Project Stats Section */
+#projectStats {
+  margin-top: 1em;
+  font-size: 1em;
+  color: #A0A0A0;
+  text-align: left;
+}
+
+#projectStats h2 {
+  color: #1DB954;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5em;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  input, button {
+    font-size: 0.9em;
+    padding: 0.4em;
+  }
+
+  #projectStats {
+    font-size: 0.9em;
+  }
+}
