@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modrinth Project Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js for graphs -->
+</head>
+<body>
+  <div class="container">
+    <h1>Modrinth Project Tracker</h1>
+    <div class="input-group">
+      <input type="text" id="projectID" placeholder="Enter Modrinth Project ID">
+      <button onclick="pasteProjectID()">Paste</button>
+    </div>
+    <button onclick="fetchProjectStats()">Track Project</button>
+    
+    <div id="projectStats"></div>
+<div id="versionHistory"></div>
+<div id="paginationControls">
+  <button onclick="previousPage()" id="prevBtn" disabled>Previous</button>
+  <button onclick="nextPage()" id="nextBtn" disabled>Next</button>
+</div>
+
+<!-- Add a chart container for downloads (if not already in HTML) -->
+<canvas id="downloadChart" width="400" height="200"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
